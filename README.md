@@ -3,13 +3,17 @@
 - Maven 3 or later
 - MySQL 5.6 or later
 
-## Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
+#goal 
+- running web app including database by docker ,then upload it into you own docker repository 
+
+#step 
+- creat app web db docker file (find the base several images on docker hub) 
+- customize the dockerfile 
+- wirten docker compose file
+- after finish the docker compsoe up
+- push the docker images into you own docker hub repository 
+
+
 ## Database
 Here,we used Mysql DB 
 MSQL DB Installation Steps for Linux ubuntu 14.04:

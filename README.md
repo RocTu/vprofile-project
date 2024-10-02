@@ -1,28 +1,35 @@
+# Java Web Application with Docker and MySQL
+
+This project demonstrates containerizing a Java web application with a MySQL database using Docker, and deploying it to Docker Hub.
+
 ## Prerequisites
+
 - JDK 1.8 or later
 - Maven 3 or later
-- MySQL 5.6 or later
+- Docker and Docker Compose
+- Docker Hub account
 
-#goal 
-- running web app including database by docker ,then upload it into you own docker repository 
+## Project Structure
 
-#step 
-- creat app web db docker file (find the base several images on docker hub) 
-- customize the dockerfile 
-- wirten docker compose file
-- after finish the docker compsoe up
-- push the docker images into you own docker hub repository 
+Briefly describe the main components of your project structure, including the location of source files, resources, and Docker-related files.
 
+## Step-by-Step Guide
 
-## Database
-Here,we used Mysql DB 
-MSQL DB Installation Steps for Linux ubuntu 14.04:
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
+1. Create Dockerfiles
+   - Create a Dockerfile for the web application
+   - Create a separate Dockerfile for the MySQL database
 
-Then look for the file :
-- /src/main/resources/accountsdb
-- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < accountsdb.sql
+2. Customize Dockerfiles
+   - Adjust base images and configurations as needed for your application
 
+3. Write docker-compose.yml
+   - Define services for web app and database
+   - Set up networking, environment variables, and volume mounts
 
+4. Build and Run the Application
+   - Use Docker Compose to build images and start containers
+
+5. Push Images to Docker Hub
+   - Log in to Docker Hub
+   - Tag your images
+   - Push the images to your Docker Hub repository
